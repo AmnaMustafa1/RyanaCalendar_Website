@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyanaCalender</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: whitesmoke;" >
+
+    
+        <section class="header">
+            <nav>
+           <a href="index.html"><img src="images/LOGO.jpg"></a>
+             <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="ABOUT.html">ABOUT</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                 </ul>
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+            </nav>
+            </section>   
+            <img name="slide" height="500px" width="100%">
+
+<script>
+
+            var i=0;//variable for loop
+            var images =[];//images array
+            var time=2000;//1000 milisecounds =1sec in javascript
+//image list
+images[0]="../RyanaCalendar_Website/images/C-5.jpg"
+images[1]="../RyanaCalendar_Website/images/C-4.jpg"
+images[2]="../RyanaCalendar_Website/images/C-8.jpeg"
+images[3]="../RyanaCalendar_Website/images/D-3.png"
+images[4]="../RyanaCalendar_Website/images/j15.jpg"
+ 
+
+function changeimg()
+{
+  document.slide.src =images[i];
+  if(i   <images.length-1)
+  {
+    i++;
+  }
+  else{
+    i=0;
+  }
+  setTimeout("changeimg()",time);
+}
+window.onload=changeimg()
+
+
+            </script>
+        
+
+
+
+                    <section class="calendars">
+                     <img src="images/C-8.jpeg" width="50%"alt="">
+                      <p>Lorem Ispum dolor sit amet, consectetur adipiscing elit. </p>
+                      <div class="row">
+                         <div class="cal-col">
+                          <img src="images/J-13.jpg" width="100%" alt="">
+                              <p>Lorem Ispum dolor sit amet, consectetur adipiscing elit.</p>
+                         </div>
+                             
+                          <div class="cal-col">
+                            <img src="images/J-3.jpg"  width="100%"alt="">
+                              <p>Lorem Ispum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                      </div>
+                      </section>
+
+
+                      <!-----Call To Action----->
+<section class="cat">
+  <h1>Ryana Calendars<br> TEAM</h1>
+  <a href="contact.html">CONTACT US</a>
+</section>
+
+<!-----Footer----->
+<section class="footer">
+  <h4>Ryana Calendars</h4>
+  <p>Lorem Ispum dolor sit amet, consectetur adipiscing elit.Pellentesque aliquet turips nulla, elifend faucibus est<br> sollicitudin  ut. Maeccenas ut veneatis  ex, et dapibus purus.</p>
+  <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+  </div>
+  </section>
+
+
+
+</body>
+</html>                
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
